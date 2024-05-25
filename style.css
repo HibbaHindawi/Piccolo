@@ -24,6 +24,9 @@ body{
 #straight{
     background-color: black;
 }
+#start{
+    background-color: burlywood;
+}
 img{
     width: 200px;
 }
@@ -39,8 +42,11 @@ img{
 #resultNumber{
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, purple);
 }
-a{
+#links{
     margin-top: 20px;
-    background-color: rgb(0, 0, 0);
-    font-size: 2px;
+}
+a{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
 }
