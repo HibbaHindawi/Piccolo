@@ -18,12 +18,12 @@ function calculate() {
     while(percentage < 50){
         percentage = Math.floor(Math.random() * 100);
     }
-    resultElem.innerHTML = "<p>"+ percentage + "%</p>";
-    if(percentage > 90){
-        resultElem.innerHTML += "<p> youre so gay blo </p>";
+    resultElem.innerHTML = "<p id='resultNumber'>"+ percentage + "%</p>";
+    if(percentage >= 90){
+        resultElem.innerHTML += "<img src='Images/gay.png' alt='Gay Cat'><p> youre so gay blo </p>";
     }
-    else if(percentage > 50){
-        resultElem.innerHTML += "<p> you will be touched tonight ;) </p>";
+    else if(percentage >= 50){
+        resultElem.innerHTML += "<img src='Images/touch.png' alt='Touching Cat'><p> you will be touched tonight ;) </p>";
     }
 }
 function straightCalculate(){
