@@ -1,0 +1,41 @@
+html, body{
+    height: 100%;
+}
+body{
+    color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#lesbian{
+    background-image: linear-gradient(to bottom, red, orange, rgb(255, 182, 47), white, pink, rgb(255, 143, 162), rgb(255, 29, 255));
+}
+
+#gay{
+    background-image: linear-gradient(to bottom, rgb(0, 134, 134), rgb(0, 204, 204), cyan, white, lightblue, rgb(69, 69, 255), rgb(72, 0, 255));
+}
+#result{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#straight{
+    background-color: black;
+}
+#button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+#button:hover{
+    background-color: aqua;
+}
+
+a{
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    font-size: 2px;
+}
