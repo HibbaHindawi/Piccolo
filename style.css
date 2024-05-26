@@ -1,5 +1,6 @@
 html, body{
     height: 100%;
+    margin: 0;
 }
 body{
     color: green;
@@ -49,4 +50,9 @@ a{
     padding: 10px;
     background-color: rgb(255, 255, 255);
     font-size: 18px;
+}
+
+#map{
+    height: 350px;
+    width: 350px;
 }
