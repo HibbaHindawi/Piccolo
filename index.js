@@ -41,18 +41,23 @@ function calculate() {
     }
 }
 function straightCalculate(){
-    initMap();
+    getLocation();
     straightAudio.loop = true;
     straightAudio.volume = 0.5;
     straightAudio.play();
-    resultElem.innerHTML = "<img id='wide' src='Images/middlefinger.png' alt='middle finger'><p> 0%</p>";
+    resultElem.innerHTML = "<img id='wide' src='Images/middlefinger.png' alt='middle finger'><p> 0%</p><h2 id='gayText1'>YOU ARE GAY</h2><h2 id='gayText2'>YOU ARE GAY</h2>";
 }
-function initMap(){
+function initMap(position){
     let map = L.map('map').locate({setView: true, watch: true, maxZoom: 17});
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-
+    let marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+    marker.bindPopup("<b>I have your ip address :)</b><br> kys <3");
+    marker.openPopup();
+}
+function getLocation(){
+    navigator.geolocation.getCurrentPosition(initMap);
 }
