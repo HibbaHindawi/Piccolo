@@ -54,4 +54,8 @@ function initMap(){
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+
+}
+function straightCalculate(){
+    resultElem.innerHTML = "<img src='Images/middlefinger.png' alt='middle finger'><p> 0%</p>";
 }
