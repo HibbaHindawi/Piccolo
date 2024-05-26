@@ -45,7 +45,7 @@ function straightCalculate(){
     straightAudio.loop = true;
     straightAudio.volume = 0.5;
     straightAudio.play();
-    resultElem.innerHTML = "<p> 0%</p>";
+    resultElem.innerHTML = "<img id='wide' src='Images/middlefinger.png' alt='middle finger'><p> 0%</p>";
 }
 function initMap(){
     let map = L.map('map').locate({setView: true, watch: true, maxZoom: 17});
@@ -55,7 +55,4 @@ function initMap(){
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-}
-function straightCalculate(){
-    resultElem.innerHTML = "<img src='Images/middlefinger.png' alt='middle finger'><p> 0%</p>";
 }
